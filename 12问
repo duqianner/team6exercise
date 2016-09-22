@@ -1,0 +1,108 @@
+1. dart语言特性中的循环语句定义和操作方法
+if语句
+if (isRaining()) {               //条件都为布尔型，若不是布尔型，则认为是false
+  you.bringRainCoat();
+} else if (isSnowing()) {
+  you.wearJacket();
+} else {
+  car.putTopDown();
+}
+-------------------------------------------------------------
+if (name != null && !name.isEmpty) {    //条件一行，指令一行，多行便于理解
+  congrats(name);
+} else {
+  tryAgain();
+}
+recurse(List items) {
+  if (items == null || items.isEmpty) return;      //或
+  // …
+}
+
+for循环
+var message = new StringBuffer("Dart is fun");     //var用于定义变量
+for (var i = 0; i < 5; i++) {
+  message.add('!');
+}
+while循环
+while(peopleAreClapping()) {
+  playSongs();
+}
+do while循环
+do {
+  processRequest();
+} while(stillRunning());
+
+2. dart字符串的定义和操作方法
+42.toString(); // '42'
+String html = '<button id="confirmation">Confirm?</button>';
+
+3. dart函数定义和使用方法
+meaningOfLife() => 42;     // return the resulting value of the expression on right-hand side of the fat arrow.         //the definition of the function
+
+String shout(String msg) {
+  return msg.toUpperCase();
+}      //We have optional type annotations, so we can annotate this method’s parameters and return type.
+
+4. dart中数组定义和使用方法
+var constantList = const [1, 2, 3];
+const baz = const [];
+数组= 列表
+
+5.dart中列表定义和使用方法
+Lists use zero-based indexing, where 0 is the index of the first element and list.length - 1 is the index of the last element.
+var list = [1, 2, 3];
+list[1] = 1;
+
+6.dart中 Map定义和使用方法
+var gifts = {                  //图
+// Keys      Values
+  'first' : 'partridge',
+  'second': 'turtledoves',
+  'fifth' : 'golden rings'
+};
+
+var nobleGases = {
+// Keys  Values
+  2 :   'helium',
+  10:   'neon',
+  18:   'argon',
+};
+
+7. querySelector（）函数的详细API解释
+https://api.dartlang.org/stable/1.19.1/dart-html/querySelector.html
+var element1 = document.querySelector('.className');
+var element2 = document.querySelector('#id');    //CSS
+
+Element querySelector(String selectors) => document.querySelector(selectors);  //source
+
+8. 详细解释dart如何操作html的文档
+Edit the HTML source code
+Click HTML, at the upper left of DartPad. The view switches from Dart code to the (non-existent) HTML code.
+Add the following HTML code:
+<p id="RipVanWinkle">
+  RipVanWinkle paragraph.
+</p>
+Click HTML OUTPUT to see how a browser would render your HTML.
+
+Edit the Dart source code
+Click DART, at the upper right of DartPad. The view switches from HTML code to Dart code.
+Change the Dart code to the following:
+import 'dart:html';
+
+void main() {
+  querySelector('#RipVanWinkle').text = 'Wake up, sleepy head!';
+}
+Click Run to execute your code.
+The text in the HTML OUTPUT tab changes to “Wake up, sleepy head!”
+
+9. dart web app 应用程序组织结构的解释部分
+https://webdev.dartlang.org/codelabs/ng2
+
+10. dart可用的各种工具的解释部分
+https://www.dartlang.org/tools
+
+11. 指引你到其他社区社区寻求dart相关问题帮助的解释部分
+https://www.dartlang.org/guides/platforms
+
+12. 从web storm软件菜单找出webstrom 中dart开发的帮助文档
+https://www.jetbrains.com/help/webstorm/2016.2/dart-support.html?search=dart
