@@ -27,7 +27,37 @@ querySelector('#RipVanWinkle').text = 'Wake up, sleepy head!';
 }```
 Click Run to execute your code.The text in the HTML OUTPUT tab changes to “Wake up, sleepy head!”
 
-####9,dart web app 应用程序组织结构的解释部分
-####10, dart可用的各种工具的解释部分
-####11,指引你到其他社区社区寻求dart相关问题帮助的解释部分
-####12,从web storm软件菜单找出webstrom 中dart开发的帮助文档
+####9. dart web app 应用程序组织结构的解释部分
+  以下是dart web app项目目录结构
+```+web 
+ +packages 
+ +dart 
+ +style 
+  index.html 
+```
+web目录是整个web程序的根目录，index.html就是我们的入口文件，style目录中存放css样式文件，dart目录中存放的是dart文件， 而packages目录中存放的是dart语言的libraries，比如说我们希望使用dart:html库，那么就是加载了packages目录下的该库文件。
+.packages文件描述了库与文件路径的对应关系
+
+#####10. dart可用的各种工具的解释部分
+#####IDEs
+dart语言的插件已经被许多常用的IDE （像webstorm等）所支持; 
+当然也可以为一些文本编辑器（像vim、sublimetext等）安装dart的插件
+#####SDKs
+用途	sdk
+web app(移动端的web页面)、作为脚本或服务器	dart
+移动端原生app	Flutter
+命令行工具
+pub 包管理工具
+管理Dart的包，用于安装，使用和分享Dart库，支持Dart插件的IDEs对pub都有支持；
+#####静态分析器
+运行并报告你的代码中的任何的错误和警告。你的IDE的这个Dart插件应当利用了Dart的解释引擎，但是你也自己在命令行中运行这个分析器
+代码规范器
+规范你的代码格式，按照dart风格规范的要求，你的IDE通常就会允许你来规范化你的代码风格。
+
+####11.指引你到其他社区社区寻求dart相关问题帮助的解释部分
+   Get help区块：
+   
+       有许多我们可以回答或者问dart相关问题的平台和社区，在Community and Support这一块。
+
+####12.从web storm软件菜单找出webstrom 中dart开发的帮助文档
+   https://www.jetbrains.com/help/webstorm/2016.2/dart-support.html?search=dart
