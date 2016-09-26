@@ -6,7 +6,7 @@
 Lists use zero-based indexing, where 0 is the index of the first element and list.length - 1 is the index of the last element.
 ```var list = [1, 2, 3];
 list[1] = 1;```
-#### 6.dart中 Map定义和使用方法
+#### 6.dart中 Map的定义和使用方法
 ```var gifts = {                  //图// Keys     
  Values  'first' : 'partridge',  'second': 'turtledoves',  'fifth' : 'golden rings'};
 var nobleGases = {// Keys 
