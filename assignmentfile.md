@@ -1,30 +1,58 @@
-####1,dart语言特性中的循环语句定义和操作方法
-####2,dart字符串的定义和操作方法
-####3,dart函数定义和使用方法
-####4,dart中数组定义和使用方法
+#### 1,dart语言特性中的循环语句定义和操作方法
+``` dart
+(1)for (int month = 1; month <= 12; month++) {
+  print(month);
+}
+（2）while (year < 2016) {
+  year += 1;
+}
+```
+#### 2,dart字符串的定义和操作方法
+``` dart 
+（1）	String name = 'Bob';
+（2）	var s1 = 'Single quotes work well for string literals.';
+```
+#### 3,dart函数定义和使用方法
+``` dart
+（1）int fibonacci(int n) {
+      if (n == 0 || n == 1) return n;
+      return fibonacci(n - 1) + fibonacci(n - 2);
+}
+var result = fibonacci(20);
+（3）	flybyObjects.where((name) => name.contains('anus')).forEach(print);
+```
+#### 4,dart中数组定义和使用方法
+根据官网资料显示，dart中数组的使用与列表相似 
 #### 5.dart中列表定义和使用方法
 Lists use zero-based indexing, where 0 is the index of the first element and list.length - 1 is the index of the last element.
 ```var list = [1, 2, 3];
-list[1] = 1;```
+list[1] = 1;
+```
+
 #### 6.dart中 Map定义和使用方法
-```var gifts = {                  //图// Keys     
+``` var gifts = {                  //图// Keys     
  Values  'first' : 'partridge',  'second': 'turtledoves',  'fifth' : 'golden rings'};
 var nobleGases = {// Keys 
-Values  2 :   'helium',  10:   'neon',  18:   'argon',};```
+Values  2 :   'helium',  10:   'neon',  18:   'argon',};
+```
 #### 7. querySelector（）函数的详细API解释
 https://api.dartlang.org/stable/1.19.1/dart-html/querySelector.html
 ``` var element1 = document.querySelector('.className');
-var element2 = document.querySelector('#id');```
-```Element querySelector(String selectors) => document.querySelector(selectors);  //source```
+var element2 = document.querySelector('#id');
+```
+```Element querySelector(String selectors) => document.querySelector(selectors);  //source
+```
 #### 8. 详细解释dart如何操作html的文档
 ##### Edit the HTML source codeClick HTML, at the upper left of DartPad. The view switches from Dart code to the (non-existent) HTML code.Add the following HTML code:
-```<p id="RipVanWinkle">  RipVanWinkle paragraph.</p>```
+```<p id="RipVanWinkle">  RipVanWinkle paragraph.</p>
+```
 Click HTML OUTPUT to see how a browser would render your HTML.
 ##### Edit the Dart source codeClick DART, at the upper right of DartPad. The view switches from HTML code to Dart code.Change the Dart code to the following:
 ```import 'dart:html';
 void main() { 
 querySelector('#RipVanWinkle').text = 'Wake up, sleepy head!';
-}```
+}
+```
 Click Run to execute your code.The text in the HTML OUTPUT tab changes to “Wake up, sleepy head!”
 
 ####9,dart web app 应用程序组织结构的解释部分
